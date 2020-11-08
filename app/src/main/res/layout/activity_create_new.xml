@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0909"
+    tools:context=".CreateNew">
+
+    <FrameLayout
+        android:layout_width="257dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="376dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btn_NewUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient_button_background" />
+
+        <TextView
+            android:id="@+id/txtNewUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoText="false"
+            android:inputType="text"
+            android:text="Create New User"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#F4F1F4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="328dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="116dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_marginLeft="10dp"
+            android:textColor="#EFEAEA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAE5E5"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="#040303"
+            android:textColorHint="#090707" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Password"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#E6E2E2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDE9E9"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#070606" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:layout_marginLeft="10dp"
+            android:text="Repeat Password"
+            android:textColor="#DFDBDB"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D8D3D3"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="333dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_green_flag" />
+
+    <EditText
+        android:id="@+id/txtinstruct"
+        android:layout_width="308dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="284dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:text="Your Password should have a minimum of 8 characters and contain at least one number, one uppercase and one lowercase letter. You can use special characters."
+        android:textColor="#DFDBDB"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

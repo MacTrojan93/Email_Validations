@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="298dp"
+        android:layout_height="121dp"
+        android:src="@drawable/logo_green_flag"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="317dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="104dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txtEmail_Add"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#0B0A0A" />
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Enter Password"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#090909" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:src="@drawable/gradient_button_background" />
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#F4F1F4"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="328dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btn_NewUser"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:src="@drawable/gradient_button_background" />
+
+        <TextView
+            android:id="@+id/txtNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User"
+            android:layout_marginLeft="60dp"
+            android:textAlignment="center"
+            android:textColor="#F4F1F4"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="47dp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox_pass"
+            android:checked="true"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Show Password" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
